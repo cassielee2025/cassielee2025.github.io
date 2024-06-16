@@ -1,15 +1,28 @@
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   
   h1 {
     color: #03a895;
     font-size: 30px;
+    text-align: center;
   }
 
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
   
-  
+  h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 11px;
+    text-align: center;
+  }
   
   p, 
   li {
