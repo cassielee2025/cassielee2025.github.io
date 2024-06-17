@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
 /* site header */
@@ -148,4 +149,126 @@ nav a:hover {
   height: auto;
   object-fit: cover;
   object-position: bottom;
+}
+
+/* my work */
+.mywork{
+	section{
+		width: 90%;
+		max-width: 1200px;
+		margin: 0 auto;
+		.row{
+			align-items: center;
+    	height: 100vh;
+		}
+	}
+}
+
+.card{
+	position: relative;
+	height: 400px;
+	width: 30%;
+	transition: ease all 2.3s;
+	perspective: 1200px;
+	&:hover{
+		.cover{
+			transform: rotateX(0deg) rotateY(-180deg);
+			&:before{
+				transform: translateZ(30px);
+			}
+			&:after{
+				background-color: black;
+			}
+			h1{
+				transform: translateZ(100px);
+			}
+			.price{
+				transform: translateZ(60px);
+			}
+			a{
+				transform: translateZ(-60px) rotatey(-180deg);
+			}
+		}
+	}
+	
+	.cover{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		transform-style: preserve-3d;
+  	transition: ease all 2.3s;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		
+    &:before{
+			transition: ease all 2.3s;
+			transform-style: preserve-3d;
+			transform: translateZ(0px);
+		}
+		
+    &:after{
+			content: '';
+			position: absolute;
+			top:0px;
+			left:0px;
+			right:0px;
+			bottom:0px;
+			z-index: 2;
+			transition: ease all 1.3s;
+			background: rgba(0,0,0,.4);
+		}
+		&.item_a{
+			background-image: url('../images/mywork_gis.png');
+      background-size: 110%;
+		}
+		&.item_b{
+			background-image: url('../images/mywork_datascience.png');
+      height: 100%;
+		}
+		&.item_c{
+			background-image: url('../images/mywork_research.png');
+		}
+		h1{
+			font-weight: 600;
+			position: absolute;
+			bottom: 55px;
+			left: 50px;
+			color: white;
+			transform-style: preserve-3d;
+  		transition: ease all 2.3s;
+			z-index:3;
+			font-size: 3em;
+			transform: translateZ(0px);
+		}
+	}
+	.card_back{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: #0b0f08;
+		transform-style: preserve-3d;
+  	transition: ease all 2.3s;
+		transform: translateZ(-1px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		a{
+			transform-style: preserve-3d;
+			transition: ease transform 2.3s, ease background .5s;
+			transform: translateZ(-1px) rotatey(-180deg);
+			background: transparent;
+			border: 1px solid white;
+			font-weight: 200;
+			font-size: 1.3em;
+			color: white;
+			padding: 14px 32px;
+			outline: none;
+			text-decoration: none;
+			&:hover{
+				background-color: white;
+				color: #0b0f08;
+			}
+		}
+	}
 }
