@@ -1,52 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <title>Cassie Home Page</title>
   <!-- link css and html -->
   <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
   <!-- set character and screen display -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
-
 <body>
-
     <header class="site_header">
-
         <!-- navigation links -->
         <nav>
             <a href="#aboutme">About Me</a>
             <a href="#mywork">My Work</a>
-            <a href="#contact">Contact</a>
         </nav>
-
         <h1>Cassie Lee</h1>
-
     </header>
-
     <hr>
-
     <main>
         <section id="aboutme" class="aboutme">
-        
             <div class="aboutme_header">
                 <img src="./resources/images/aboutme_profile_picture.jpg" alt="Photo">
                 <h4>Northwestern University B.A. 2025</h4>
                 <h4>Environmental Science &#8226; Global Health &#8226; Data Science</h3>
             </div>
-
             <div class="aboutme_text">
-
                 <div class="aboutme_video">
                     <video autoplay loop muted id="video_background">
                         <source src="./resources/images/aboutme_background.MOV" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
-
                 <div class="aboutme_text_overlay">
                     <p>
                         Hello! I'm Cassie, an undergraduate at Northwestern University 
@@ -79,7 +64,7 @@
                                 skills in data wrangling, exploratory data analysis, machine 
                                 learning, and data visualization.
                             </p>
-                            <a href="#">Explore More</a>
+                            <a href="./project_pages/data_science.html" target="_blank">Explore More</a>
                         </div>
                     </div>
                 </div>
@@ -115,8 +100,11 @@
                 </div>
             </div>
         </section>
+        <section id="contact" class="contact">
+            <div class="contact_head">
+                <h1>Contact Me</h1>
+            </div>
+        </section>
     </main>
-
 </body>
-
 </html>
