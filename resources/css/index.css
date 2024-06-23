@@ -169,6 +169,7 @@ nav a:hover {
   position: relative;
   font-size: 40px;
   text-align: center;
+  color: #2c403a;
 }
 
 .row {
@@ -235,7 +236,7 @@ nav a:hover {
   bottom: 0;
   z-index: 2;
   transition: ease all 1.3s;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .4);
 	border-radius: 20px;
 }
 
@@ -248,6 +249,7 @@ nav a:hover {
   transition: ease all 2.3s;
   z-index: 3;
   transform: translateZ(0px);
+  color: #2c403a;
 }
 
 .cover.item_a {
