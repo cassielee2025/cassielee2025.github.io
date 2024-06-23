@@ -66,33 +66,11 @@ header h1 {
 }
 
 .image img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 70%;
+  max-height: 70%;
   object-fit: contain;
   border-radius: 10px;
-}
-
-.image video {
-  max-width: 90%;
-  max-height: 90%;
-  object-fit: contain;
-  border-radius: 10px;
-}
-
-.image_tall {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 75%;
-  max-height: 75%;
-  object-fit: contain;
-}
-
-.image_tall img {
-  max-width: 75%;
-  max-height: 75%;
-  object-fit: contain;
-  border-radius: 10px;
+  filter: brightness(0) invert(1);
 }
 
 .text {

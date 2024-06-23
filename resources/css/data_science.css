@@ -120,6 +120,7 @@ header h1 {
   text-align: center;
   border: 1px solid #ffffff;
   margin-bottom: 3%;
+  transition: ease transform 2.3s, ease background .5s;
 }
 
 .links a:hover {

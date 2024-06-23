@@ -302,9 +302,7 @@ nav a:hover {
   transition: ease transform 2.3s, ease background .5s;
   transform: translateZ(-1px) rotateY(-180deg);
   background: transparent;
-  border: 1px solid white;
-  font-weight: 200;
-  font-size: 1.3em;
+  border: 1px solid #ffffff;
   color: #ffffff;
   padding: 14px 32px;
   outline: none;
@@ -314,4 +312,6 @@ nav a:hover {
 .card_back a:hover {
   background-color: #2c403a;
   color: #ffffff;
+  border: 1px solid #2c403a;
+
 }
