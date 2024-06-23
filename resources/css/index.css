@@ -315,3 +315,47 @@ nav a:hover {
   border: 1px solid #2c403a;
 
 }
+
+/* contact me */
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  color:#ffffff;
+  position: relative;
+  text-align: center;
+}
+
+.contact_head {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.contact_head h1{
+  font-size: 30px;
+  margin-bottom: 2%;
+}
+
+.contact_head a{
+  color: #ffffff;
+}
+
+.contact_images {
+  margin-bottom: 2%;
+  display: flex;        /* Enable flexbox */
+  flex-direction: row;  /* Arrange items in a row */
+  justify-content: center;
+}
+
+.contact_images img {
+  margin: 0 1%;
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.github_logo img {
+  filter: brightness(0) invert(1);
+}
