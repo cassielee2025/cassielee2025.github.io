@@ -6,7 +6,30 @@
   scroll-behavior: smooth;
 }
 
-/* site header */
+/*************** navigation pane ***************/
+nav {
+  position: absolute;
+  top: 5%;
+  font-size: 1.5vw;
+  text-align: center; 
+  vertical-align: top;
+  z-index: 1; 
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1vh 1vw; 
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #000000; 
+}
+
+/*************** site header ***************/
 .site_header {
   display: flex;
   flex-direction: column;
@@ -39,52 +62,10 @@
     text-align: center; 
     position: relative;
     z-index: 1; 
-    font-size: 100px;
+    font-size: 8vw;
 }
 
-/* navigation pane */
-nav {
-  position: absolute;
-  top: 30px;
-  font-size: 20px;
-  text-align: center; 
-  vertical-align: top;
-  z-index: 1; 
-}
-
-nav a {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 10px 20px; 
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #ffffff;
-    border-radius: 5px;
-    color: #000000; 
-}
-
-/* adjustments for smaller screens */
-@media (max-width: 768px) {
-  .site_header h1 {
-      font-size: 50px; 
-  }
-  
-  .site_header h3 {
-      font-size: 16px; 
-  }
-  
-  nav {
-      flex-direction: column;
-  }
-  
-  nav a {
-      padding: 8px 16px;
-  }
-}
-
-/* about me */
+/*************** about me ***************/
 .aboutme {
   display: flex;
   height: 100vh;
@@ -98,6 +79,10 @@ nav a:hover {
   justify-content: center;
   background-color: #000000;
   color: #ffffff;
+}
+
+.aboutme_header h4 {
+  font-size: 1.5vw;
 }
 
 .aboutme_header img {
@@ -135,6 +120,7 @@ nav a:hover {
   text-align: center;
   margin-bottom: 5%;
   max-width: 70%;
+  font-size: 1.5vw;
 }
 
 .aboutme_video {
@@ -151,7 +137,7 @@ nav a:hover {
   object-position: bottom;
 }
 
-/* my work */
+/*************** my work ***************/
 .mywork {
   width: 95%;
   margin: auto auto;
@@ -167,7 +153,7 @@ nav a:hover {
 
 .mywork_head h1 {
   position: relative;
-  font-size: 50px;
+  font-size: 4vw;
   text-align: center;
   color: #2c403a;
 }
@@ -182,7 +168,7 @@ nav a:hover {
 .card {
   position: relative;
   height: 70%;
-  width: calc(33.33% - 20px);
+  width: calc(33.33% - 2%);
   transition: ease all 2.3s;
   perspective: 1200px;
 	margin: 15px 0;
@@ -236,7 +222,7 @@ nav a:hover {
   right: 0;
   bottom: 0;
   z-index: 2;
-  transition: ease all 1.3s;
+  transition: ease all 2.3s;
   background-color: ;
 	border-radius: 20px;
 }
@@ -252,10 +238,9 @@ nav a:hover {
 .card_front h1 {
   position: relative;
 	text-align: center;
-	font-size: 40px;
+	font-size: 2.5vw;
   color: #ffffff;
   transform-style: preserve-3d;
-  transition: ease all 2.3s;
   z-index: 3;
   transform: translateZ(0px);
   color: #ffffff;
@@ -295,6 +280,7 @@ nav a:hover {
   text-align: center;
   max-width: 80%;
   margin-bottom: 10%;
+  font-size: 1.3vw;
 }
 
 .card_back a {
@@ -304,7 +290,8 @@ nav a:hover {
   background: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;
-  padding: 14px 32px;
+  font-size: 1.3vw;
+  padding: 2vh 2vw;
   outline: none;
   text-decoration: none;
 }
@@ -312,11 +299,11 @@ nav a:hover {
 .card_back a:hover {
   background-color: #2c403a;
   color: #ffffff;
-  border: 1px solid #2c403a;
+  border: 1px solid #ffffff;
 
 }
 
-/* contact me */
+/*************** contact me ***************/
 .contact {
   display: flex;
   flex-direction: column;
@@ -335,8 +322,13 @@ nav a:hover {
 }
 
 .contact_head h1{
-  font-size: 30px;
+  font-size: 2vw;
   margin-bottom: 2%;
+}
+
+.contact_head p {
+  font-size: 1.3vw;
+
 }
 
 .contact_head a{
@@ -350,6 +342,25 @@ nav a:hover {
 
 .contact_images img {
   margin: 0 1%;
-  max-width: 3%;
-  max-height: 3%;
+  max-width: 3.5%;
+  max-height: 3.5%;
+}
+
+/* adjustments for smaller screens */
+@media (max-width: 768px) {
+  .site_header h1 {
+      font-size: 50px; 
+  }
+  
+  .site_header h3 {
+      font-size: 16px; 
+  }
+  
+  nav {
+      flex-direction: column;
+  }
+  
+  nav a {
+      padding: 8px 16px;
+  }
 }
